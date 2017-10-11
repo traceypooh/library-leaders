@@ -1,64 +1,81 @@
 <!doctype html><head><script src="eveal.js"></script></head><body>
 
+# TV Third Eye
+## Library Leaders Forum
+Oct 2017
 
-# Talk
-### with slides
-
-<small>
-  by me
-  <br/>
-
-  Sometime 2017
-</small>
-
-<small>
-  _?_ for keyboard shortcuts<br/>
-</small>
-
----
-### Run these slides Locally
-
-``` bash
-git clone https://github.com/traceypooh/eveal.js; open eveal.js/index.html
+https://traceypooh.github.io/library-leaders  xxx activate!
+```bash
+git clone https://github.com/traceypooh/library-leaders; open library-leaders/index.html
 ```
 
-(network not needed after clone)
 
 ---
-### Say Something
-- keep calm
-- carry on
+# Third Eye
+xxx show logo
+- OCR 'lower third'
+  - chyrons
+    - overlaid text on broadcasts
+    - not captions or descriptive text
+    - editorial / summarizing in nature
+- 4 TV channels, 24x7, ~1 min from realtime
+  - CNN
+  - MSNBC
+  - Fox News
+  - BBC News
 
 ---
-### Choices
-
-You can:
-- copy the _index.html_ file to _tech-deck.html_
-   - modify it
-   - put as many 'decks' as you like in this repo
-   - and then open tech-deck.html in your browser
-- or keep cloning/forking to multiple repositories..
+xxx show top of API images and arrows
 
 ---
-I like to
-``` bash
-atom README.md
-```
-
-to get nice coloring and edit help/cues from my editor, Atom.
-
----
-<!-- .slide: data-background="https://media.giphy.com/media/Gdjgn0hy8zBRK/giphy.gif" -->
-# Demo Time!
+# bots  
+- twitter bots
+  - https://twitter.com/tvThirdEye
+    - https://twitter.com/tvThirdEyeB
+    - https://twitter.com/tvThirdEyeF
+    - https://twitter.com/tvThirdEyeM
+  - https://twitter.com/tvThirdEye/lists/third-eye xxx
 
 ---
-### Let's table that discussion
+# API
+- Tab Separated Values
+- https://archive.org/services/third-eye.php
+  - nice for command-line
+  - import to google and excel spreadsheets
+  - filtered
+  - raw (~25MB / day)
+    - more errors
+    - 3rd-party filtering possible
+  - TSV files uploaded to https://archive.org/details/third-eye
 
-| fruity   | color                    | etc |
-| -------- |:------------------------ |:----|
-| orange   | well, i mean it's orange | tic |
-| banana   | mushy                    | tac |
+---
+# Chyron filtering
+- tesseract OCR
+  - free; errors
+- simhash
+  - groups 'nearly the same'
+    - character flips
+    - word off in time
+- look for vowels
+- pick 'most seen' group every minute
+  - and tweet
+
+---
+# TV AI Examples
+- Voxxx determined Puerto Rico was least mentioned on Fox News (link)
+- audio fingerprints
+  - presented keynote paper on CSPAN floor speeches and vocal pitch (UIowa)
+  - discovered 375K political Ads
+  - find sound bites of speeches
+- Faceomatic - find appearances of US Govt officials in TV (facial recognition)
+
+---
+# Where We're Going
+- https://archive.org/details/TVNewsKitchen
+- want to serve journalists, researchers, librarians & more
+- responsible behavior and access to data
+- non-consumptive use
 
 ---
 <!-- .slide: data-background="https://media.giphy.com/media/q4ICE9wYvOwBG/giphy.gif" -->
-# THE END
+# The End
